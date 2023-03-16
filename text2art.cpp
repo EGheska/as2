@@ -40,6 +40,7 @@ tty::foreground_color text_to_color(std::string text, std::string color){
         obj.font.load_glyphs("./fonts/doh.ascii");
         obj.set_color(tty::foreground_color::WHITE, tty::color_variant::DIM);
         obj.render_text(7,5 ,text);
+        std::cout << "1";
     }
 //    switch(i){
 //        case tty::foreground_color::BLACK:
@@ -83,6 +84,7 @@ int main(int argc, char * argv[]){
 //    prn.set_color(tty::foreground_color::BLUE, tty::color_variant::NORMAL);
 //    prn.render_text(2, 2, "VOID");
 //    return EXIT_SUCCESS;
+    std::cout << "Enter the text and color name. Color should be written using caps lock, i.e. 'WHITE'" << "\n";
     std::string name;
     std::string color;
     std::cin >> name >> color;
