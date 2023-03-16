@@ -8,6 +8,8 @@
 
 tty::foreground_color text_to_color(std::string text, std::string color){
     ascii_art::text_printer obj{};
+    tty::console conio{};
+    conio.clear();
     if (color == "BLACK"){
         obj.font.load_glyphs("./fonts/doh.ascii");
         obj.set_color(tty::foreground_color::BLACK, tty::color_variant::DIM);
