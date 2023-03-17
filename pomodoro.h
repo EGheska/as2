@@ -38,11 +38,11 @@ namespace pomodoro{
         void run();
 
         // renders time left using the correct color, used by `run`
-        void render(long time_left);
+        void render(long time_left, ascii_art::text_printer& obj);
 
         // sets the font color depending on the current interval
         // used by `render`
-        void set_terminal_colors();
+        void set_terminal_colors(ascii_art::text_printer& obj);
     };
 }
 
